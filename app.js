@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
+const port = 7777;
 
 // Express 통신 시 JSON 형식으로 데이터 통신
 app.use(express.json());
