@@ -2,8 +2,9 @@
   "name": "nodejs-mongodb",
   "description": "Node.js와 MongoDB 간 연동",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "dev": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
