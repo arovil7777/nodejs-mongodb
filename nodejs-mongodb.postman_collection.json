@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "9a5eb701-3a35-467a-8845-d2347b3ee564",
+		"name": "Local Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32808995"
+	},
+	"item": [
+		{
+			"name": "Nodejs-MongoDB",
+			"item": [
+				{
+					"name": "Book Collection - 조회",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/book",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"book"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "\bBook Collection - 삽입",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Basic Book\",\n    \"author\": \"James\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7777/book",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"book"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
