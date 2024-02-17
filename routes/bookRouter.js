@@ -3,7 +3,7 @@ const book = require("../schemas/book");
 const routers = express.Router();
 
 // book collection 조회
-routers.get("/book", (req, res, next) => {
+routers.get("/list", (req, res, next) => {
     book.find().then(result => {
         console.log(result);
         res.json(result);
@@ -13,12 +13,11 @@ routers.get("/book", (req, res, next) => {
 });
 
 // book collection 데이터 삽입
-routers.post("/book", (req, res, next) => {
-    const { name, author, insertDate } = req.body;
+routers.post("/insert", (req, res, next) => {
+    const { name, author } = req.body;
     const bookValues = new book({
         name,
-        author,
-        insertDate
+        author
     });
 
     bookValues.save().then(result => {

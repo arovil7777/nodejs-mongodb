@@ -31,4 +31,5 @@ app.listen(EXPRESS_PORT, () => {
     console.log(`Server Started... Port: ${EXPRESS_PORT}`);
 });
 
-app.use("/", require("./routes/bookRouter"));
+app.use("/account", require("./routes/accountRouter"));
+app.use("/book", require("./routes/bookRouter"));
